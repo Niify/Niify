@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Personal Productivity Page</h1>
+  </header>
+  
+  <section id="tasks">
+    <h2>Task List</h2>
+    <ul id="taskList">
+      <!-- Dynamic tasks will go here -->
+    </ul>
+    <input type="text" id="taskInput" placeholder="Add a new task...">
+    <button onclick="addTask()">Add Task</button>
+  </section>
+
+  <section id="timer">
+    <h2>Pomodoro Timer</h2>
+    <div id="timerDisplay">25:00</div>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="resetTimer()">Reset</button>
+  </section>
+
+  <section id="files">
+    <h2>Quick Access Files</h2>
+    <input type="file" id="fileInput">
+    <button onclick="uploadFile()">Upload File</button>
+    <ul id="fileList">
+      <!-- Uploaded files will be listed here -->
+    </ul>
+  </section>
+
+  <section id="notes">
+    <h2>Notes</h2>
+    <textarea id="notesArea" placeholder="Write your notes here..."></textarea>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
